@@ -1,0 +1,445 @@
+@charset "UTF-8";
+
+/***************
+ * Universeel. *
+ ***************/
+html
+{
+	min-width        : 600px;
+	min-height       : 500px;
+	background-color : lightgrey;
+	font-family      : Arial, sans-serif;
+}
+
+body
+{
+	margin     : 0;
+	overflow-y : scroll;
+}
+
+footer, #footerMargin
+{
+	bottom : 0;
+}
+
+a
+{
+	text-decoration : none;
+}
+
+a:hover
+{
+	text-decoration : underline;
+}
+
+#footerMargin
+{
+	visibility : hidden;
+}
+
+.navMenu, footer, #footerMargin, #asideLeft, #asideRight
+{
+	z-index : 100;
+}
+
+.bucketContent, .biedingen form input[type="submit"]:hover
+{
+	background-color : #5DB1E9;
+}
+
+/* Menus. */
+.navMenu, footer, #footerMargin
+{
+	width      : 100%;
+	background : #3498DB;
+	position   : fixed;
+	text-align : center;
+}
+
+.navMenu
+{
+	top : 0;
+}
+
+#navMenuMargin
+{
+	position   : relative;
+	visibility : hidden;
+}
+
+.navMenu, .bucketContent
+{
+	padding : 1% 0;
+}
+
+.navMenu, footer, .bucketContent
+{
+	color : #FFF;
+}
+
+.navMenu a
+{
+	margin-right : 7.5%;
+}
+
+.navMenu a, .bucketContent a
+{
+	color : inherit;
+}
+
+.navMenu a:hover, .bucketContent a:hover, .biedingen form input[type="submit"]
+{
+	color : #ECF0F1;
+}
+
+/* Aside. */
+#asideLeft, #asideRight, #asideRightNieuwsteVeiling
+{
+	margin-top              : 5%;
+	border-top-left-radius  : 15px;
+	border-top-right-radius : 15px;
+	position                : fixed;
+	width                   : 15%;
+	min-width               : 100px;
+}
+
+#asideLeft ul, #asideRight ul, #asideRightNieuwsteVeiling ul
+{
+	padding : 0;
+}
+
+#asideLeft
+{
+	left : 0;
+}
+
+#asideRight
+{
+	right  : 0;
+	height : 40%;
+}
+
+#asideRightNieuwsteVeiling
+{
+	height : 40%;
+	right  : 0;
+	bottom : 15%;
+}
+
+/* Forms. */
+input[readonly], textarea[readonly]
+{
+	background-color : #EEE;
+}
+
+/* Buckets. */
+.bucketHeader
+{
+	border-top-left-radius  : 15px;
+	border-top-right-radius : 15px;
+	background              : #3498DB;
+	color                   : white;
+	font-family             : Arial, sans-serif;
+	min-width               : 91px;
+
+}
+
+#bucketHeaderMargin
+{
+	margin-top : 30%;
+}
+
+.bucketHeader h3
+{
+	padding        : 3px 0;
+	margin         : 0;
+	text-align     : center;
+	vertical-align : middle;
+}
+
+.bucketContent
+{
+	padding         : 3px;
+	font            : 1em "Arial bold", sans-serif;
+	color           : white;
+	list-style-type : none;
+	text-decoration : none;
+	min-width       : 85px;
+}
+
+.bucketContent
+{
+	overflow-y: auto;
+}
+
+#nieuwsteVeiling
+{
+	height : 100%;
+	bottom : 0;
+}
+
+.bucketList
+{
+	list-style : none;
+	margin     : 0;
+	max-height : 400px;
+	overflow-x : hidden;
+}
+
+#content
+{
+	padding          : 0.5%;
+	color            : #606060;
+	border-left      : 1px solid gray;
+	border-right     : 1px solid gray;
+	border-bottom    : 1px solid gray;
+	background-color : white;
+	width            : 68%;
+	margin           : 0 auto;
+	min-width        : 100px;
+	z-index          : 50;
+}
+
+.productInformatie img
+{
+	margin-top : 1%;
+}
+
+.productInformatie img
+{
+	margin : 5px;
+	width  : 400px;
+	height : 300px;
+}
+
+p.productInformatie
+{
+	float : left;
+}
+
+#inputDiv input
+{
+	margin-top : 3.7%;
+	width      : 85%;
+	float      : right;
+}
+
+#searchBar input
+{
+	margin-top : 3.7%;
+	width      : 77.5%;
+	float      : right;
+}
+
+#searchBarButton input
+{
+	margin-top : 3.7%;
+	width      : 7.5%;
+	float      : right;
+	color      : #FFF;
+	background : #3498DB;
+	border     : 1px solid gray;
+	opacity    : 1.5;
+}
+
+#searchBarButton input:hover
+{
+	opacity : 0.5;
+}
+
+#searchBar
+{
+	height        : 15%;
+	width         : 99%;
+	margin-top    : 2%;
+	margin-bottom : 2%;
+	text-align    : left;
+}
+
+.logo
+{
+	margin-left : 2%;
+	width       : 10%;
+	height      : 10%;
+	padding     : 0.5% 0 0.5% 0;
+}
+
+/***************
+ * Per pagina. *
+ ***************/
+/* Productpagina. */
+.product
+{
+	display       : inline-flex;
+	height        : 50%;
+	width         : 100%;
+	margin-bottom : 2%;
+}
+
+.productImage
+{
+	margin-left : 2%;
+	width       : 20%;
+	height      : 20%;
+	padding     : 2% 2% 2% 2%;
+	border      : 1px solid gray;
+}
+
+.productImage img
+{
+	width : 100%;
+}
+
+#nieuwsteVeiling img
+{
+	background : white;
+	margin     : 2% 2% 2% 2%;
+	width      : 90%;
+	padding    : 2% 2% 2% 2%;
+}
+
+.scrollContent
+{
+	overflow-y : scroll;
+	height     : 100%;
+}
+
+.productContent
+{
+	width       : 50%;
+	margin-left : 2%;
+}
+
+/* Contact */
+#contact input, #contact textarea, #contact select
+{
+	width : 98%;
+}
+
+/* Registratiepagina. */
+.RegistratieHeader, th
+{
+	margin-top  : 2%;
+	background  : #3498DB;
+	color       : white;
+	font-family : Arial, sans-serif;
+}
+
+.RegistratieHeader h3
+{
+	padding        : 3px 0;
+	margin         : 0;
+	text-align     : center;
+	vertical-align : middle;
+}
+
+/* profielNavigatie */
+.subNavigatie
+{
+	background : #3498DB;
+	width      : 100%;
+	height     : 4%;
+	padding    : 1% 0 1% 0;
+}
+
+.subNavigatie a
+{
+	margin     : 4%;
+	color      : white;
+	display    : inline;
+	text-align : center;
+}
+
+/* Betaalmethodepagina. */
+.betaalIconen img
+{
+	margin-left : 2%;
+	width       : 4%;
+	height      : 4%;
+}
+
+.betaalIconen p
+{
+	margin-left : 2%;
+}
+
+.productInformatie
+{
+	min-height: 350px;
+	width     : 100%;
+	border    : 1px solid gray;
+}
+
+.productInformatie div
+{
+	display        : inline-block;
+	vertical-align : top;
+}
+
+.productInformatie img
+{
+	width  : 25%;
+	height : auto;
+}
+
+.biedingen
+{
+	float : right;
+}
+
+.biedingen div
+{
+	padding-left : 0.5%;
+}
+
+.biedingen h4
+{
+	margin : 10% 0;
+}
+
+.biedingen form input[type="submit"]
+{
+	width         : 100%;
+	background    : #3498DB;
+	border-radius : 5px;
+}
+
+#geplaatsteProducten td, #geplaatsteProducten th, #geplaatsteProducten tr
+{
+	border     : 1px solid gray;
+	text-align : center;
+}
+
+#geplaatsteProducten img
+{
+	width : 120px;
+}
+
+#beoordeling form input
+{
+	width  : 98%;
+	border : 1px solid gray;
+}
+
+#beoordeling form input[type="radio"]
+{
+	text-align : left;
+}
+
+.accountInformatie
+{
+	border-top : 1px solid gray;
+	width      : 100%;
+}
+
+.accountInformatie td
+{
+	text-align   : left;
+	border-bottom: 1px solid gray;
+}
+
+.camera_thumb
+{
+	width: 100px;
+	height: 75px;
+}
